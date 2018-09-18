@@ -1,17 +1,19 @@
 import Foundation
 
 protocol Cipher {
-    func encode(_ plaintext: String, secret: String) -> String
+    func encode(_ plaintext: String, secret: String) -> String?
     func decode(_ plaintext: String, secret: String) -> String
     func instructionSet() -> String
 }
 
 struct CeaserCipher: Cipher {
 
-    func encode(_ plaintext: String, secret: String) -> String {
+    func encode(_ plaintext: String, secret: String) -> String? {
+        guard let shiftBy = UInt32(secret) else{
+            return nil
+        }
         var encoded = ""
-        var shiftBy = UInt32(secret)!
-
+        
         for character in plaintext {
             let unicode = character.unicodeScalars.first!.value
             let shiftedUnicode = unicode + shiftBy

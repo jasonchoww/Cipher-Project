@@ -6,7 +6,7 @@ import Foundation
 
 struct ReverseAlphaCipher: Cipher {
     
-    func encode(_ plaintext: String, secret: String) -> String {
+    func encode(_ plaintext: String, secret: String) -> String? {
         var encoded = ""
         var shiftBy = UInt32(secret)!
         

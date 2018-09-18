@@ -10,6 +10,7 @@
 		35295786214AF40D003DF461 /* AlphanumericCesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35295785214AF40D003DF461 /* AlphanumericCesarCipher.swift */; };
 		35295788214B09D6003DF461 /* NumericToAlphaCodeCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35295787214B09D6003DF461 /* NumericToAlphaCodeCipher.swift */; };
 		3529578A214B3259003DF461 /* ReverseAlphaCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35295789214B3259003DF461 /* ReverseAlphaCipher.swift */; };
+		3583B91E21508271007CD6EF /* CeaserCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3583B91D21508271007CD6EF /* CeaserCipherTests.swift */; };
 		970E4DD52138EC8600BA3EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */; };
 		970E4DD72138EC8600BA3EE9 /* SpyAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DD62138EC8600BA3EE9 /* SpyAppViewController.swift */; };
 		970E4DDA2138EC8600BA3EE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970E4DD82138EC8600BA3EE9 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		35295785214AF40D003DF461 /* AlphanumericCesarCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphanumericCesarCipher.swift; sourceTree = "<group>"; };
 		35295787214B09D6003DF461 /* NumericToAlphaCodeCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericToAlphaCodeCipher.swift; sourceTree = "<group>"; };
 		35295789214B3259003DF461 /* ReverseAlphaCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseAlphaCipher.swift; sourceTree = "<group>"; };
+		3583B91D21508271007CD6EF /* CeaserCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeaserCipherTests.swift; sourceTree = "<group>"; };
 		970E4DD12138EC8600BA3EE9 /* SpyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		970E4DD62138EC8600BA3EE9 /* SpyAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyAppViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				970E4DE92138EC8700BA3EE9 /* SpyAppTests.swift */,
+				3583B91D21508271007CD6EF /* CeaserCipherTests.swift */,
 				970E4DEB2138EC8700BA3EE9 /* Info.plist */,
 			);
 			path = SpyAppTests;
@@ -164,6 +167,7 @@
 					};
 					970E4DE42138EC8700BA3EE9 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = 970E4DD02138EC8600BA3EE9;
 					};
 				};
@@ -227,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				970E4DEA2138EC8700BA3EE9 /* SpyAppTests.swift in Sources */,
+				3583B91E21508271007CD6EF /* CeaserCipherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +420,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7MN23CD5F;
 				INFOPLIST_FILE = SpyAppTests/Info.plist;
@@ -425,6 +431,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.anconaesselmann.SpyAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpyAppTests/SpyAppTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpyApp.app/SpyApp";
@@ -436,6 +444,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7MN23CD5F;
 				INFOPLIST_FILE = SpyAppTests/Info.plist;
@@ -446,6 +455,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.anconaesselmann.SpyAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpyAppTests/SpyAppTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpyApp.app/SpyApp";

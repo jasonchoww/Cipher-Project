@@ -8,7 +8,7 @@ import Foundation
 
 struct AlphanumericCesarCipher: Cipher {
     
-    func encode(_ plaintext: String, secret: String) -> String {
+    func encode(_ plaintext: String, secret: String) -> String? {
         var encoded = ""
         var shiftBy = UInt32(secret)!
         

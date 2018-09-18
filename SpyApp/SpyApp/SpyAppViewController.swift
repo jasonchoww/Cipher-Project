@@ -10,12 +10,40 @@ class SpyAppViewController: UIViewController {
 
     let factory = CipherFactory()
     var cipher: Cipher!
+    
+    var plaintext: String {
+        if let text = input.text {
+            return text
+        } else {
+            return ""
+        }
+    }
+    
+    var secretText: String {
+        if let text = secret.text {
+            return text
+        } else {
+            return ""
+        }
+    }
 
     @IBAction func encodeButtonPressed(_ sender: UIButton) {
+        
+        guard let cipher = self.cipher else{
+            output.text = "No cipher selected"
+            return
+        }
+        if let encoded = cipher.encode(plaintext, secret: secretText){
+            output.text = encoded
+        } else {
+            output.text = "Error encoding"
+        }
+        
+        /*
         let plaintext = input.text!
         let secret = self.secret.text!
         output.text = cipher.encode(plaintext, secret: secret)
-
+*/
     }
     
     @IBAction func decodeButtonPressed(_ sender: UIButton) {
