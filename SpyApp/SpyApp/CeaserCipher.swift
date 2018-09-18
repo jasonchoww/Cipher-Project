@@ -3,6 +3,7 @@ import Foundation
 protocol Cipher {
     func encode(_ plaintext: String, secret: String) -> String
     func decode(_ plaintext: String, secret: String) -> String
+    func instructionSet() -> String
 }
 
 struct CeaserCipher: Cipher {
@@ -33,6 +34,9 @@ struct CeaserCipher: Cipher {
         return decoded
     }
     
+    func instructionSet() -> String{
+        return "Enter a single word with letters or number"
+    }
     
     
     

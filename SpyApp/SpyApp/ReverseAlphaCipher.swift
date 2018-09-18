@@ -1,14 +1,10 @@
-//
-//  AlphanumericCesarCipher.swift
 //  SpyApp
 //
 //  Created by Jason Chow on 9/13/18.
-//  Copyright © 2018 Axel Ancona Esselmann. All rights reserved.
-//
 
 import Foundation
 
-struct AlphanumericCesarCipher: Cipher {
+struct ReverseAlphaCipher: Cipher {
     
     func encode(_ plaintext: String, secret: String) -> String {
         var encoded = ""
@@ -20,12 +16,11 @@ struct AlphanumericCesarCipher: Cipher {
             
             let unicode = character.unicodeScalars.first!.value
             var shiftedUnicode = unicode + shiftBy
-            while shiftedUnicode > 90{
-                shiftedUnicode = shiftedUnicode - 33
+            let modifier = shiftedUnicode - 65
+            if shiftedUnicode > 64 && shiftedUnicode < 91{
+                shiftedUnicode = 64 + 26 - modifier
             }
-            while shiftedUnicode > 57  && shiftedUnicode < 65{
-                shiftedUnicode = shiftedUnicode + 8
-            }
+            
             let shiftedCharacter = String(UnicodeScalar(UInt8(shiftedUnicode)))
             encoded = encoded + shiftedCharacter
         }
@@ -41,17 +36,20 @@ struct AlphanumericCesarCipher: Cipher {
         for character in uppercasePlaintext {
             
             let unicode = character.unicodeScalars.first!.value
-            var shiftedUnicode = unicode - shiftBy
-            while shiftedUnicode < 48{
-                shiftedUnicode = shiftedUnicode + 42 + shiftBy
-            }
-            while shiftedUnicode < 65  && shiftedUnicode > 57{
-                shiftedUnicode = shiftedUnicode - 8 + shiftBy
+            var shiftedUnicode = unicode + shiftBy
+            let modifier = shiftedUnicode - 65
+            if shiftedUnicode > 64 && shiftedUnicode < 91{
+                shiftedUnicode = 90 - modifier
             }
             let shiftedCharacter = String(UnicodeScalar(UInt8(shiftedUnicode)))
             decoded = decoded + shiftedCharacter
         }
         return decoded
+    }
+    
+    
+    func instructionSet() -> String{
+        return "Enter letters with no numbers and no spaces and set the bottom text field to 0"
+    }
+ 
 }
-}
-

@@ -6,7 +6,7 @@ struct CipherFactory {
         "cesar": CeaserCipher(),
         "alphanumericCesar": AlphanumericCesarCipher(),
         "numericToAlpha": NumericToAlphaCodeCipher(),
-        
+        "reverseAlpha": ReverseAlphaCipher()
         
     ]
 
@@ -14,10 +14,5 @@ struct CipherFactory {
         return ciphers[key]!
     }
     
-
-    
-    
-    
-    
-    
+  
 }

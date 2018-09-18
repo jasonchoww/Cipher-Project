@@ -1,10 +1,6 @@
-//
-//  atbashCipher.swift
 //  SpyApp
 //
 //  Created by Jason Chow on 9/13/18.
-//  Copyright © 2018 Axel Ancona Esselmann. All rights reserved.
-//
 
 import Foundation
 
@@ -48,4 +44,9 @@ struct NumericToAlphaCodeCipher: Cipher {
         }
         return decoded
     }
+    
+    func instructionSet() -> String{
+        return "Enter numbers with no spaces and set the bottom text field to 0"
+    }
+ 
 }
