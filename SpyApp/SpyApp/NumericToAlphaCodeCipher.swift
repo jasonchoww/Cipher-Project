@@ -4,11 +4,14 @@
 
 import Foundation
 
+//CHANGES NUMBERS INTO ALPHABET 123456789 TO ABCDEFGHI
 struct NumericToAlphaCodeCipher: Cipher {
     
     func encode(_ plaintext: String, secret: String) -> String? {
         var encoded = ""
-        var shiftBy = UInt32(secret)!
+        guard let shiftBy = UInt32(secret) else{
+            return nil
+        }
 
         let uppercasePlaintext = plaintext.uppercased()
         

@@ -4,7 +4,7 @@ struct CipherFactory {
 
     private var ciphers: [String: Cipher] = [
         "cesar": CeaserCipher(),
-        "alphanumericCesar": AlphanumericCesarCipher(),
+        "alphanumericCaesar": AlphanumericCesarCipher(),
         "numericToAlpha": NumericToAlphaCodeCipher(),
         "reverseAlpha": ReverseAlphaCipher()
         

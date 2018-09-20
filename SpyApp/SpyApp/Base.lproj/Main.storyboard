@@ -37,26 +37,11 @@
                                     <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rOS-Wo-Pqe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fes-ni-SZc">
-                                <rect key="frame" x="135" y="390" width="105" height="30"/>
-                                <color key="backgroundColor" red="0.90418777947680296" green="0.90803626290635919" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="decode"/>
-                                <connections>
-                                    <action selector="decodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9h-gb-JYH"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1C-b2-zLN">
                                 <rect key="frame" x="28" y="148" width="133" height="30"/>
                                 <state key="normal" title="alphanumericCesar"/>
                                 <connections>
                                     <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eOc-dE-tUQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93D-ds-U87">
-                                <rect key="frame" x="28" y="186" width="110" height="30"/>
-                                <state key="normal" title="numericToAlpha"/>
-                                <connections>
-                                    <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddd-0X-Mku"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cipher Instruction..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfU-Zw-xKO">
@@ -76,18 +61,19 @@
                                     <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lA6-un-BTj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq1-Ko-TkT">
-                                <rect key="frame" x="135" y="352" width="105" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.97653021240875104" blue="0.81140512002431953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="encode">
-                                    <color key="titleColor" red="0.0" green="0.47001315310000003" blue="0.7208609533" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fes-ni-SZc">
+                                <rect key="frame" x="232" y="186" width="105" height="30"/>
+                                <color key="backgroundColor" red="0.90418777947680296" green="0.90803626290635919" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="oTe-SN-k99"/>
+                                </constraints>
+                                <state key="normal" title="decode"/>
                                 <connections>
-                                    <action selector="encodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxW-wn-ML6"/>
+                                    <action selector="decodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9h-gb-JYH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cipher encoded/decoded..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48c-5E-e8N">
-                                <rect key="frame" x="15" y="441" width="345" height="35"/>
+                                <rect key="frame" x="15" y="332" width="345" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="NTY-LJ-KIC"/>
                                     <constraint firstAttribute="width" constant="345" id="qdl-lj-wZ0"/>
@@ -96,36 +82,57 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq1-Ko-TkT">
+                                <rect key="frame" x="232" y="138" width="105" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.97653021240875104" blue="0.81140512002431953" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="3yo-dU-Kou"/>
+                                </constraints>
+                                <state key="normal" title="encode">
+                                    <color key="titleColor" red="0.0" green="0.47001315310000003" blue="0.7208609533" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="encodeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxW-wn-ML6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93D-ds-U87">
+                                <rect key="frame" x="28" y="186" width="110" height="30"/>
+                                <state key="normal" title="numericToAlpha"/>
+                                <connections>
+                                    <action selector="cipherButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddd-0X-Mku"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="T1C-b2-zLN" firstAttribute="top" secondItem="U73-0S-OXn" secondAttribute="bottom" constant="8" id="34P-uh-UGT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fes-ni-SZc" secondAttribute="trailing" constant="135" id="3pa-Li-Wpr"/>
+                            <constraint firstItem="IU8-P1-mBo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Pz-Pq-vk6"/>
                             <constraint firstItem="U73-0S-OXn" firstAttribute="top" secondItem="IU8-P1-mBo" secondAttribute="bottom" constant="50" id="5cx-gK-pEn"/>
                             <constraint firstItem="dfU-Zw-xKO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5iR-Xj-CbF"/>
-                            <constraint firstItem="kq1-Ko-TkT" firstAttribute="top" secondItem="dfU-Zw-xKO" secondAttribute="bottom" constant="28" id="9Te-iF-MjN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kq1-Ko-TkT" secondAttribute="trailing" constant="135" id="Aja-j2-Cmy"/>
+                            <constraint firstItem="kq1-Ko-TkT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="232" id="C3K-Nm-HVk"/>
                             <constraint firstItem="dfU-Zw-xKO" firstAttribute="top" secondItem="ASb-T2-b8a" secondAttribute="bottom" constant="8" id="EAH-If-NIn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="48c-5E-e8N" secondAttribute="trailing" constant="15" id="EJB-Ud-8I8"/>
-                            <constraint firstItem="48c-5E-e8N" firstAttribute="top" secondItem="fes-ni-SZc" secondAttribute="bottom" constant="21" id="HUG-CR-MaM"/>
-                            <constraint firstItem="fes-ni-SZc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KM6-iZ-5up"/>
-                            <constraint firstItem="fes-ni-SZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="Ooz-kk-Sbe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kq1-Ko-TkT" secondAttribute="trailing" constant="38" id="G7S-ya-oK5"/>
+                            <constraint firstItem="93D-ds-U87" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="Ies-te-uIx"/>
+                            <constraint firstItem="fes-ni-SZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="232" id="UGH-nJ-Zev"/>
                             <constraint firstItem="4B7-dH-Qje" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="URM-Hs-FUu"/>
                             <constraint firstItem="ASb-T2-b8a" firstAttribute="top" secondItem="93D-ds-U87" secondAttribute="bottom" constant="8" id="Ufa-eO-dQJ"/>
-                            <constraint firstItem="fes-ni-SZc" firstAttribute="top" secondItem="kq1-Ko-TkT" secondAttribute="bottom" constant="8" id="W6n-EL-PY9"/>
+                            <constraint firstItem="48c-5E-e8N" firstAttribute="top" secondItem="dfU-Zw-xKO" secondAttribute="bottom" constant="8" id="W5W-zX-kMG"/>
                             <constraint firstItem="ASb-T2-b8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="WDl-HF-dut"/>
+                            <constraint firstItem="kq1-Ko-TkT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="118" id="X05-w7-MQP"/>
                             <constraint firstItem="IU8-P1-mBo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="XBo-vo-3zv"/>
                             <constraint firstItem="T1C-b2-zLN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="XSX-f1-U7C"/>
                             <constraint firstItem="U73-0S-OXn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="b1f-PI-idw"/>
-                            <constraint firstItem="kq1-Ko-TkT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bxX-bk-DTg"/>
+                            <constraint firstItem="IU8-P1-mBo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ciq-oz-5F3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IU8-P1-mBo" secondAttribute="trailing" constant="16" id="e8V-rs-Bwg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4B7-dH-Qje" secondAttribute="trailing" constant="16" id="egO-Td-F55"/>
+                            <constraint firstItem="fes-ni-SZc" firstAttribute="top" secondItem="kq1-Ko-TkT" secondAttribute="bottom" constant="18" id="f8G-7K-hHP"/>
                             <constraint firstItem="4B7-dH-Qje" firstAttribute="top" secondItem="IU8-P1-mBo" secondAttribute="bottom" constant="8" id="h9g-x3-tFm"/>
                             <constraint firstItem="IU8-P1-mBo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hXU-kq-KDv"/>
                             <constraint firstItem="93D-ds-U87" firstAttribute="top" secondItem="T1C-b2-zLN" secondAttribute="bottom" constant="8" id="j2d-DJ-pNY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dfU-Zw-xKO" secondAttribute="trailing" constant="15" id="l2b-cb-5rd"/>
-                            <constraint firstItem="kq1-Ko-TkT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="oKB-JG-kmP"/>
                             <constraint firstItem="93D-ds-U87" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="tY3-gu-GIw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fes-ni-SZc" secondAttribute="trailing" constant="38" id="tzA-YS-ine"/>
                             <constraint firstItem="dfU-Zw-xKO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="x4q-95-ZXl"/>
                             <constraint firstItem="48c-5E-e8N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="zGL-J3-vPt"/>
                         </constraints>
@@ -140,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="98.50074962518741"/>
+            <point key="canvasLocation" x="135.19999999999999" y="97.601199400299862"/>
         </scene>
     </scenes>
 </document>

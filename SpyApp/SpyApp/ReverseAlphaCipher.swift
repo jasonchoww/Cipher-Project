@@ -6,9 +6,12 @@ import Foundation
 
 struct ReverseAlphaCipher: Cipher {
     
+    //REVERSES YOUR LETTERS ABC... TO ZYX...
     func encode(_ plaintext: String, secret: String) -> String? {
         var encoded = ""
-        var shiftBy = UInt32(secret)!
+        guard let shiftBy = UInt32(secret) else{
+            return nil
+        }
         
         let uppercasePlaintext = plaintext.uppercased()
         

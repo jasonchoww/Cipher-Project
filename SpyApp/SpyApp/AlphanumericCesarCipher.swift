@@ -10,7 +10,9 @@ struct AlphanumericCesarCipher: Cipher {
     
     func encode(_ plaintext: String, secret: String) -> String? {
         var encoded = ""
-        var shiftBy = UInt32(secret)!
+        guard let shiftBy = UInt32(secret) else{
+            return nil
+        }
         
         let uppercasePlaintext = plaintext.uppercased()
         

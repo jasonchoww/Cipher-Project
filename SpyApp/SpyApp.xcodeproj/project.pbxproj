@@ -10,6 +10,9 @@
 		35295786214AF40D003DF461 /* AlphanumericCesarCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35295785214AF40D003DF461 /* AlphanumericCesarCipher.swift */; };
 		35295788214B09D6003DF461 /* NumericToAlphaCodeCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35295787214B09D6003DF461 /* NumericToAlphaCodeCipher.swift */; };
 		3529578A214B3259003DF461 /* ReverseAlphaCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35295789214B3259003DF461 /* ReverseAlphaCipher.swift */; };
+		35462CC32153306600B7201C /* AlphanumericCesarCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35462CC22153306600B7201C /* AlphanumericCesarCipherTests.swift */; };
+		356B63AB2154097200EA2088 /* NumericToAlphaCodeCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B63AA2154097200EA2088 /* NumericToAlphaCodeCipherTests.swift */; };
+		356B63AF21540CE800EA2088 /* ReverseAlphaCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356B63AE21540CE800EA2088 /* ReverseAlphaCipherTests.swift */; };
 		3583B91E21508271007CD6EF /* CeaserCipherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3583B91D21508271007CD6EF /* CeaserCipherTests.swift */; };
 		970E4DD52138EC8600BA3EE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */; };
 		970E4DD72138EC8600BA3EE9 /* SpyAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E4DD62138EC8600BA3EE9 /* SpyAppViewController.swift */; };
@@ -35,6 +38,9 @@
 		35295785214AF40D003DF461 /* AlphanumericCesarCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphanumericCesarCipher.swift; sourceTree = "<group>"; };
 		35295787214B09D6003DF461 /* NumericToAlphaCodeCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericToAlphaCodeCipher.swift; sourceTree = "<group>"; };
 		35295789214B3259003DF461 /* ReverseAlphaCipher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseAlphaCipher.swift; sourceTree = "<group>"; };
+		35462CC22153306600B7201C /* AlphanumericCesarCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphanumericCesarCipherTests.swift; sourceTree = "<group>"; };
+		356B63AA2154097200EA2088 /* NumericToAlphaCodeCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericToAlphaCodeCipherTests.swift; sourceTree = "<group>"; };
+		356B63AE21540CE800EA2088 /* ReverseAlphaCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseAlphaCipherTests.swift; sourceTree = "<group>"; };
 		3583B91D21508271007CD6EF /* CeaserCipherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeaserCipherTests.swift; sourceTree = "<group>"; };
 		970E4DD12138EC8600BA3EE9 /* SpyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970E4DD42138EC8600BA3EE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 			children = (
 				970E4DE92138EC8700BA3EE9 /* SpyAppTests.swift */,
 				3583B91D21508271007CD6EF /* CeaserCipherTests.swift */,
+				35462CC22153306600B7201C /* AlphanumericCesarCipherTests.swift */,
+				356B63AA2154097200EA2088 /* NumericToAlphaCodeCipherTests.swift */,
+				356B63AE21540CE800EA2088 /* ReverseAlphaCipherTests.swift */,
 				970E4DEB2138EC8700BA3EE9 /* Info.plist */,
 			);
 			path = SpyAppTests;
@@ -230,8 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				356B63AF21540CE800EA2088 /* ReverseAlphaCipherTests.swift in Sources */,
 				970E4DEA2138EC8700BA3EE9 /* SpyAppTests.swift in Sources */,
 				3583B91E21508271007CD6EF /* CeaserCipherTests.swift in Sources */,
+				35462CC32153306600B7201C /* AlphanumericCesarCipherTests.swift in Sources */,
+				356B63AB2154097200EA2088 /* NumericToAlphaCodeCipherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

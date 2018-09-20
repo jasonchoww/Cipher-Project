@@ -32,4 +32,9 @@ class CeaserCipherTests: XCTestCase {
         XCTAssertNil(result)
     }
     
+    func test_decodedComparedtoEncoded(){
+        let result = cipher.encode("abc", secret: "2")
+        XCTAssertEqual("abc", cipher.decode(result!, secret: "2"))
+    }
+    
 }
